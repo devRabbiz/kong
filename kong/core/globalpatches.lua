@@ -256,7 +256,7 @@ return function(options)
         seeds[ngx.worker.pid()] = seed
       else
         ngx.log(ngx.DEBUG, debug.traceback("attempt to seed random number "..
-            "generator, but already seeded with: "..tostring(seed), 2))
+            "generator, but already seeded with: " .. tostring(seed), 2))
       end
 
       return seed
